@@ -34,3 +34,6 @@ public
 heroku
 /views
 dist
+
+## Project-specific
+/test.js
