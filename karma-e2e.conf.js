@@ -1,6 +1,8 @@
 // Karma configuration
 // http://karma-runner.github.io/0.10/config/configuration-file.html
 
+'use strict';
+
 module.exports = function(config) {
   config.set({
     // base path, that will be used to resolve files and exclude
@@ -37,7 +39,7 @@ module.exports = function(config) {
     // - Safari (only Mac)
     // - PhantomJS
     // - IE (only Windows)
-    browsers: ['Chrome'],
+    browsers: ['Firefox'],
 
 
     // Continuous Integration mode
