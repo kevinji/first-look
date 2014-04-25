@@ -188,7 +188,7 @@ module.exports = function (grunt) {
             nodemon.on('config:update', function () {
               setTimeout(function () {
                 require('open')('http://localhost:8080/debug?port=5858');
-              }, 500);              
+              }, 500);
             });
           }
         }
@@ -404,12 +404,12 @@ module.exports = function (grunt) {
       }
     },
 
-    // mochaTest: {
-    //   options: {
-    //     reporter: 'spec'
-    //   },
-    //   src: ['test/server/**/*.js']
-    // },
+    mochaTest: {
+      options: {
+        reporter: 'spec'
+      },
+      src: ['test/server/**/*.js']
+    },
 
     env: {
       test: {
@@ -471,22 +471,22 @@ module.exports = function (grunt) {
         'env:test',
         'mochaTest'
       ]);
-    }
 
-    else if (target === 'client') {
+    } else if (target === 'client') {
       return grunt.task.run([
         'clean:server',
         'concurrent:test',
         'autoprefixer',
         'karma'
       ]);
-    }
 
-    else grunt.task.run([
-      'test:server',
-      'test:client'
-    ]);
-  });  
+    } else {
+      grunt.task.run([
+        'test:server',
+        'test:client'
+      ]);
+    }
+  });
 
   grunt.registerTask('build', [
     'clean:dist',
