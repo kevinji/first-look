@@ -1,5 +1,5 @@
 {
-  "name": "firstlook",
+  "name": "first-look",
   "version": "0.0.0",
   "dependencies": {
     "express": "~3.4.3",
