@@ -404,12 +404,12 @@ module.exports = function (grunt) {
       }
     },
 
-    mochaTest: {
-      options: {
-        reporter: 'spec'
-      },
-      src: ['test/server/**/*.js']
-    },
+    // mochaTest: {
+    //   options: {
+    //     reporter: 'spec'
+    //   },
+    //   src: ['test/server/**/*.js']
+    // },
 
     env: {
       test: {
