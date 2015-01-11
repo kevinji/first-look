@@ -1,6 +1,7 @@
 {
   "name": "first-look",
   "version": "0.0.0",
+  "private": true,
   "dependencies": {
     "express": "~3.4.3",
     "lodash": "~2.4.1",
